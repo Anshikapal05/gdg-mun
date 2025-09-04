@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import "tailwindcss";
+
+
+
+/* CSS variables */
+:root {
+  --gold: #D4AF37;
+}
+
+/* Custom styles */
+/* Use the serif for headings and general body fallback */
+body {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* utility for gold text (so we can use `text-gold`) */
+.text-gold { color: var(--gold); }
+
+/* compact serif heading style */
+.h-serif {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+/* subtle golden glow helper */
+.golden-glow {
+  filter: drop-shadow(0 6px 18px rgba(212,175,55,0.18));
+}
+
+/* remove default body scroll for front hero when used with h-screen */
+.hide-scroll {
+  overflow: hidden;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.4;
+  }
+}
+
+.animate-gradientMove {
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+}
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
