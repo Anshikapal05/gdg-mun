@@ -33,8 +33,8 @@ Follow the steps below to run the project on your local machine:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/gdgps-mun.git
-cd gdgps-mun
+git clone https://github.com/Anshikapal05/gdg-mun.git
+cd gdg-mun
 ```
 
 ### 2. Install the dependencies
