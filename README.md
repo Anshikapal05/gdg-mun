@@ -23,3 +23,37 @@ The website is designed to showcase the event, committees, agendas, countdown ti
 - **Animations:** Framer Motion  
 - **Icons:** Lucide React / Heroicons  
 - **Deployment:** Vercel 
+
+
+---
+
+## 🚀 Getting Started
+
+Follow the steps below to run the project on your local machine:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/gdgps-mun.git
+cd gdgps-mun
+```
+
+### 2. Install the dependencies
+```bash
+npm install
+```
+
+### 3. Run the Development Server
+```bash
+npm run dev
+```
+#### By Default the app will run on: 
+```arduino
+http://localhost:5173
+```
+
+## Author
+
+Developed by GDGPS MUN Tech Team.
+
+
+
