@@ -8,30 +8,35 @@ function Footer() {
 
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-col md:flex-row items-center justify-between gap-6 md:gap-8 text-center md:text-left">
         
-        {/* Left - Brand */}
-        <div>
-          <p className="h-serif text-[#FFD700] text-2xl font-bold tracking-wide">
-            GDGPS MUN
-          </p>
-          <p className="mt-1 text-sm text-gray-400">
-            © {new Date().getFullYear()} All Rights Reserved.
-          </p>
+        {/* Left - Logo + Brand */}
+        <div className="flex items-center justify-center md:justify-start gap-3">
+          <img
+            src="/logo.png" // Make sure logo.png is in public folder
+            alt="GDGPS Logo"
+            className="h-10 w-auto sm:h-14 object-contain"
+          />
+          <div>
+            <p className="h-serif text-[#FFD700] text-2xl font-bold tracking-wide">
+              GDGPS MUN
+            </p>
+            <p className="mt-1 text-sm text-gray-400">
+              © {new Date().getFullYear()} All Rights Reserved.
+            </p>
+          </div>
         </div>
 
         {/* Center - Navigation Links */}
         <ul className="flex flex-wrap justify-center md:justify-center gap-4 sm:gap-6 text-sm font-semibold">
-          {["About", "Addressals", "Committees", "Media", "Contact"].map(
-            (item, idx) => (
-              <li key={idx}>
-                <a
-                  href={`/${item.toLowerCase()}`}
-                  className="text-gray-300 hover:text-[#FFD700] transition-colors duration-300 hover:underline"
-                >
-                  {item}
-                </a>
-              </li>
-            )
-          )}
+          {["About", "Media", "Contact"].map((item, idx) => (
+            <li key={idx}>
+              <a
+                href={`/${item.toLowerCase()}`}
+                className="text-gray-300 hover:text-[#FFD700] transition-colors duration-300 hover:underline"
+              >
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
 
         {/* Right - Instagram Handle */}
@@ -43,7 +48,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="hover:underline"
           >
-            @dgpsmunlko
+            @gdgpsmunlko
           </a>
         </div>
       </div>

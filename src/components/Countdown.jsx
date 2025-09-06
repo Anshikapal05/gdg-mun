@@ -46,7 +46,7 @@ export default function Countdown({ className = "" }) {
               d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v3H3V5a1 1 0 0 1 1-1h3V2Zm14 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9h18ZM7 12H5v2h2v-2Zm4 0H9v2h2v-2Zm4 0h-2v2h2v-2Z"
             />
           </svg>
-          10 – 11 OCTOBER
+          10th & 11th OCTOBER
         </span>
         <span className="hidden sm:block h-[1px] w-8 bg-[#6b5b2a]/50" />
         <span className="flex items-center gap-2">
@@ -56,23 +56,23 @@ export default function Countdown({ className = "" }) {
               d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5a2.5 2.5 0 0 1 0 5Z"
             />
           </svg>
-          LUCKNOW
+          GD GOENKA PUBLIC SCHOOL,LUCKNOW
         </span>
       </div>
 
-      {/* Tagline */}
+      {/* Tagline - NORMAL FONT */}
       <p
-        className="text-xl sm:text-3xl md:text-4xl font-[cursive] font-bold text-[#FFD700] tracking-wide animate-pulse bg-clip-text leading-snug px-2"
-        style={{
-          fontFamily: "'Great Vibes', cursive",
-          backgroundImage: "linear-gradient(90deg, #FFD700, #fff3b0, #FFD700)",
-          backgroundSize: "200% auto",
-          animation: "shine 3s linear infinite",
-          textShadow: "0 0 15px rgba(212,175,55,0.8)",
-        }}
-      >
-        Countdown to Glory: {timeLeft.days} Days!
-      </p>
+  className="text-xl sm:text-3xl md:text-4xl font-serif font-bold text-transparent tracking-wide animate-pulse leading-snug px-2 bg-clip-text"
+  style={{
+    backgroundImage: "linear-gradient(90deg, #FFD700, #fff3b0, #FFD700)",
+    backgroundSize: "200% auto",
+    animation: "shine 3s linear infinite",
+    textShadow: "0 0 15px rgba(212,175,55,0.8)",
+  }}
+>
+  Countdown to Glory: {timeLeft.days} Days!
+</p>
+
 
       {/* Timer */}
       <div className="flex justify-center gap-4 sm:gap-10 md:gap-14 mt-4 flex-wrap">
